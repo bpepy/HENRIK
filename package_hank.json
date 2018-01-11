@@ -1,0 +1,11 @@
+{
+  "name": "henrik",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "hankbot.js",
+  "author": "bpep",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "winston": "^2.4.0"
+  }
+}
