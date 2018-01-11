@@ -40,7 +40,7 @@ switch(ishank) {
         switch(args) {
             // !ping
             case 'ENRIK':
-                bot.sendMessage({
+                client.sendMessage({
                     to: channelID,
                     message: 'HENRIK!'
                  });
@@ -50,5 +50,3 @@ switch(ishank) {
      }
 	}
 });
-
-bot.login(process.env.BOT_TOKEN);
