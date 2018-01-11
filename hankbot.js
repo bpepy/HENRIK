@@ -57,3 +57,5 @@ switch(ishank) {
      }
 	}
 });
+
+bot.login(process.env.BOT_TOKEN);
