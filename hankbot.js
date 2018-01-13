@@ -5,13 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-function wordInString(s, word){
-  return new RegExp( '\\b' + word + '\\b', 'i').test(s);
-}
-
-//wordInString('did you, or did you not, get why?', 'you')
-
-
 client.on('message', message => {
     if (message.content === 'HENRIK') {
     	message.reply('HENRIK!');
