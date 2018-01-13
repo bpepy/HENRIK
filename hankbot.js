@@ -11,7 +11,7 @@ function wordInString(s, word){
 
 //wordInString('did you, or did you not, get why?', 'you')
 
-client.on('message', function (user, userID, channelID, message, evt) {
+bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
 var hank = 'HENRIK!';
@@ -31,7 +31,7 @@ switch(ishank) {
         switch(args) {
             // !ping
             case 'ENRIK':
-                client.sendMessage({
+                bot.sendMessage({
                     to: channelID,
                     message: 'HENRIK!'
                  });
