@@ -9,6 +9,9 @@ client.on('message', function (user, userID, channelID, message, evt) {
 var hank = 'HENRIK!';
 var mess=message;
 var ishank = Object.is(hank, user);
+	function wordInString(s, word){
+  return new RegExp( '\\b' + word + '\\b', 'i').test(s);
+}
 
 switch(ishank) {
 
