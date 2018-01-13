@@ -23,7 +23,7 @@ switch(ishank) {
         switch(args) {
             // !ping
             case 'ENRIK':
-                sendMessage('HENRIK!');
+                message.send('HENRIK!');
             break;
             
          }
