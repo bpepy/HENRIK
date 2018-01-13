@@ -23,7 +23,7 @@ switch(ishank) {
         switch(args) {
             // !ping
             case 'ENRIK':
-                bot.sendMessage({
+                client.sendMessage({
                     to: channelID,
                     message: 'HENRIK!'
                  });
