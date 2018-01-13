@@ -11,35 +11,11 @@ function wordInString(s, word){
 
 //wordInString('did you, or did you not, get why?', 'you')
 
-bot.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
-var hank = 'HENRIK!';
-var mess=message;
-var ishank = Object.is(hank, user);
 
-switch(ishank) {
-
-	case true:
-	break;
-	case false:
-
-    if (message.substring(0, 1) == 'H') {
-        var args = message.substring(1,6);
-        var cmd = args[0];      
-
-        switch(args) {
-            // !ping
-            case 'ENRIK':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'HENRIK!'
-                 });
-            break;
-            
-         }
-     }
-	}
+client.on('message', message => {
+    if (message.content === 'HENRIK') {
+    	message.reply('HENRIK!');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
