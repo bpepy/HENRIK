@@ -5,10 +5,33 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.content === 'HENRIK') {
-    	message.reply('HENRIK!');
-  	}
+client.on('message', function (user, userID, channelID, message, evt) {
+var hank = 'HENRIK!';
+var mess=message;
+var ishank = Object.is(hank, user);
+
+switch(ishank) {
+
+	case true:
+	break;
+	case false:
+
+    if (message.substring(0, 1) == 'H') {
+        var args = message.substring(1,6);
+        var cmd = args[0];      
+
+        switch(args) {
+            // !ping
+            case 'ENRIK':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'HENRIK!'
+                 });
+            break;
+            
+         }
+     }
+	}
 });
 
 // THIS  MUST  BE  THIS  WAY
