@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'HENRIK') {
-    	send('HENRIK!');
+    	msg.channel.send('HENRIK!');
   	}
 });
 
