@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message , user.id => {
+client.on('message', message , user => {
     if (message.content === 'HENRIK') {
     	message.channel.send('HENRIK! sent by ');
   	}
