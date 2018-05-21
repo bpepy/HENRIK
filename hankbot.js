@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.substring(0,6) === 'Henrik') {
+    if (message.content.substring(0,6) === 'Henrik') {
     	message.channel.send('HENRIK!');
   	}
 });
