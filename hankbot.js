@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var isHank = Object.is('HENRIK!', message.author);
+    var isHank = Object.is('HENRIK!#0603', message.author);
     if (message.content.substring(0,6) === 'Henrik') {
     	message.channel.send('HENRIK!'+isHank);
   	}
