@@ -6,9 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.substring(0,6) === 'Henrik') {
-    	message.channel.send('HENRIK!'+message.author.bot);
-  	}
+    switch(message.author.bot) {
+
+	case true:
+	break;
+	case false:
+        if (message.content.substring(0,6) === 'HENRIK') {
+    	    message.channel.send('HENRIK!');
+  	    }
+            break;
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
