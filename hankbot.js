@@ -14,8 +14,7 @@ client.on('message', message => {
         if (message.content.substring(0,6) === 'HENRIK') {
     	    message.channel.send('HENRIK!');
   	    }
-            break;
-		    
+            break;    
     }
 });
 
