@@ -14,7 +14,7 @@ client.on('message', message => {
         if (message.content.substring(0,6) === 'HENRIK') {
     	    message.channel.send('HENRIK!');
   	    }
-	ifelse (message.content.substring(0,7) === 'GEORGIE') {
+	else if (message.content.substring(0,7) === 'GEORGIE') {
 		message.channel.send('GEORGIE!');
   	    }
             break;    
